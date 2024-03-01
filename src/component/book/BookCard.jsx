@@ -48,7 +48,7 @@ const BookCard = (props) => {
   const handleDelete = async () => {
     try {
       await axios
-        .delete(`https://book-backend-pi.vercel.app/${_id}`)
+        .delete(`https://book-backend-peach.vercel.app/${_id}`)
         .then((res) => res.data)
         .then((data) => props.setBooks(data));
       navigate("/books");
