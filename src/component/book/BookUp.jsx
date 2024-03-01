@@ -19,7 +19,7 @@ const BookUp = () => {
   useEffect(() => {
     const fatch = async () => {
       await axios
-        .get(`https://book-backend-pi.vercel.app/${id}`)
+        .get(`https://book-backend-peach.vercel.app/${id}`)
         .then((res) => res.data)
         .then((data) => setinput(data.books));
     };
@@ -27,7 +27,7 @@ const BookUp = () => {
   }, [id]);
 
   const update = async () => {
-    await axios.put(`https://book-backend-pi.vercel.app/${id}`, {
+    await axios.put(`https://book-backend-peach.vercel.app/${id}`, {
       name: String(input.name),
       author: String(input.author),
       disc: String(input.disc),
