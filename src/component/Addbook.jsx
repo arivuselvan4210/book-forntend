@@ -23,7 +23,7 @@ const Addbook = () => {
   });
   const sentResqst = async () => {
     await axios
-      .post("https://book-backend-pi.vercel.app/", {
+      .post("https://book-backend-peach.vercel.app/", {
         name: String(input.name),
         author: String(input.author),
         disc: String(input.desc),
