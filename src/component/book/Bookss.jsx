@@ -4,7 +4,7 @@ import Bookr from "./BookCard";
 import "./arivu.css";
 import BookCard from "./BookCard";
 
-const URL = "https://book-backend-pi.vercel.app";
+const URL = "https://book-backend-peach.vercel.app/";
 
 const Books = () => {
   const [books, setBooks] = useState();
